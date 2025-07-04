@@ -1,14 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+    font-family: 'Roboto', sans-serif;
 }
 
 .Header {
     background-color: #1f2937;
     font-family: sans-serif;
-    
+    padding: 5px 255px 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    align-items: baseline;
+    margin-bottom: 50px;
+  
+}
+
+.Break {
+    display: block;
 }
 
 a {
@@ -27,6 +43,9 @@ h1 {
     color: #e5e7eb;
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 40px;
+    gap: 850px;
 }
 
 ul {
@@ -43,13 +62,18 @@ ul {
 
 .Image {
     display: flex;
-    justify-content: space-between;
-    
+    gap: 100px;
 }
 
 button {
     background-color: #3882f6;
     color: #e5e7eb;
+    border-radius: 10px;
+    padding: 5px 25px;
+    background-color: #3882f6;
+    border: 2px solid #1f2937;
+    cursor: pointer;
+    
 }
 
 .logo {
@@ -70,28 +94,36 @@ button {
     justify-content: center;
 }
 
-.Card {
-   display: flex;
-   justify-content: space-around;
-   border-radius: 30px;
+.Container {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 30px;
+    margin-bottom: 130px;
 }
 
-.Card > img {
+.text {
+    max-width: 150px;
+}
+
+
+.info > img {
     border-radius: 30px;
 }
 
 .Quote {
     background-color: #e5e7eb;
     font-size: 36px;
-    font-style: italic;
+    font-style: light italic;
     color: #1f2937;
-    padding: 45px 165px;
+    font-weight: 300;
+    padding: 120px 265px;
     display: flex;
     flex-direction: column;
 }
 
-.Name {
-    font-weight: 700px;
+.Quote > .Name {
+    font-weight: 900;
     display: flex;
     justify-content: flex-end;
 }
@@ -100,19 +132,42 @@ button {
   background-color: #3882f6; 
   display: flex;
   flex-direction: row;
-  padding: 30px 20px;
+  padding: 30px;
   justify-content: center;
-  gap: 45px;
-  margin: 30px;
+  gap: 105px;
+  margin: 100px 360px;
   border-radius: 10px;
 }
 
 .Row {
    display: flex;
    flex-direction: column;
-   
+   color: #e5e7eb;
 }
 
 .Button {
     align-self: center;
+   
+}
+
+.Button > button {
+   border-radius: 5px;
+   padding: 5px 25px;
+   color: #e5e7eb;
+   border: 2px solid #e5e7eb;
+   background-color: #3882f6;
+   cursor: pointer;
+}
+
+.Footer {
+    text-align: center;
+    background-color: #1f2937;
+    padding: 30px;
+    
+   
+}
+
+.change {
+    color: #e5e7eb;
+    font-size: 20px;
 }
