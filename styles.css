@@ -1,3 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
 body {
     display: flex;
     flex-direction: column;
@@ -9,7 +17,8 @@ body {
     background-color: #1f2937;
     display: flex;
     justify-content: space-around;
-    padding-bottom: 60px;
+    padding-bottom: 120px;
+    margin-bottom: 30px;
 }
 
 .logo {
@@ -22,7 +31,7 @@ body {
 }
 
 .Middle-Top {
-   
+   margin-top: 16px;
 }
 
 .Image > img {
@@ -32,7 +41,7 @@ body {
 .Image {
    display: flex;
    gap: 24px;
-   margin-top: 20px;
+   margin-top: 60px;
 }
 
 .Break {
@@ -74,7 +83,7 @@ button {
     background-color: #3882f6;
     border: 2px solid #1f2937;
     cursor: pointer;
-    
+    margin-top: 10px;
 }
 
 .logo {
